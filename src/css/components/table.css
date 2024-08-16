@@ -1,0 +1,28 @@
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px; 
+    text-align: left; 
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--bg-td);
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: var(--td-hover);
+}
+
+.hidden {
+    display: none;
+}
+
+tbody tr>td:nth-child(odd) {
+    background-color: var(--bg-td);
+}

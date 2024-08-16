@@ -1,0 +1,29 @@
+.footer{
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
+    background-color: var(--btn-color);
+    color: var(--light-primary);
+}
+
+.footer-text{
+font-size: 12px;
+}
+
+.footer-payment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-payment-list {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}

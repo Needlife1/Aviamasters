@@ -1,0 +1,28 @@
+{
+  "name": "Aviamasters",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.30",
+    "@types/node": "^22.2.0",
+    "autoprefixer": "^10.4.19",
+    "modern-normalize": "^2.0.0",
+    "postcss": "^8.4.40",
+    "postcss-load-config": "^6.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.4.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-full-reload": "^1.1.0",
+    "vite-plugin-html-template": "^1.2.2"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+   "vite-plugin-html-inject": "^1.1.2"
+  }
+}
