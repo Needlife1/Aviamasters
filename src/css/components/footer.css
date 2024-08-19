@@ -3,7 +3,7 @@
     padding: 25px;
     text-align: center;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
-    background-color: var(--btn-color);
+    background:var( --bg-gradient);
     color: var(--light-primary);
 }
 

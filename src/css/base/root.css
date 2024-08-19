@@ -1,11 +1,12 @@
 :root {
     --light-primary: #fff;
     --accent-color: #5206bf;
-    --accent-color-secondarily: #5206bf;
+    --accent-color-secondarily: #5319a4;
     --dark-primary: #000000;
     --border-color: #ddd;
     --bg-td:#f4f4f4;
     --td-hover:#f9f9f9;
     --btn-color:#ffcc29;
+    --bg-gradient: linear-gradient(to bottom, #000000, #333333);
 }
 

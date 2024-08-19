@@ -43,9 +43,20 @@ position: relative;
 }
 
 .burger-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     @media (min-width:992px) {
         display: none;
     }
+}
+
+.top-line, .middle-line,.bottom-line {
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    border-radius: 15px;
+    background-color: black;
 }
 
 .nav-mob {

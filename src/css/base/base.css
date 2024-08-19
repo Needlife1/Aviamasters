@@ -43,11 +43,11 @@ h3{
     font-size: 1.125em;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #fff;
-    background: #ffcc29;
-    border: 2px solid #4836bb;
+    color: var(--light-primary);
+    background: var(--btn-color);
+    border: 2px solid var(--accent-color);
     border-radius: .75rem;
-    box-shadow: 0 8px 0 #4836bb;
+    box-shadow: 0 8px 0 var(--accent-color-secondarily);
     transform: skew(-10deg);
     transition: all .1s ease;
     filter: drop-shadow(0 15px 20px #654dff63);
