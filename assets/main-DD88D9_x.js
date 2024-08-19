@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link-mob, .nav-link");
   navLinks.forEach((link) => {
     let linkPath = link.getAttribute("href");
-    console.log(linkPath);
     if (linkPath) {
       linkPath = `${baseDir}${linkPath.replace("./", "/")}`;
     }
