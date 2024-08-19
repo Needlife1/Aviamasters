@@ -278,12 +278,13 @@ summary {
 :root {
     --light-primary: #fff;
     --accent-color: #5206bf;
-    --accent-color-secondarily: #5206bf;
+    --accent-color-secondarily: #5319a4;
     --dark-primary: #000000;
     --border-color: #ddd;
     --bg-td:#f4f4f4;
     --td-hover:#f9f9f9;
     --btn-color:#ffcc29;
+    --bg-gradient: linear-gradient(to bottom, #000000, #333333);
 }
 
 /***
@@ -469,11 +470,11 @@ h3{
     font-size: 1.125em;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #fff;
-    background: #ffcc29;
-    border: 2px solid #4836bb;
+    color: var(--light-primary);
+    background: var(--btn-color);
+    border: 2px solid var(--accent-color);
     border-radius: .75rem;
-    box-shadow: 0 8px 0 #4836bb;
+    box-shadow: 0 8px 0 var(--accent-color-secondarily);
     transform: skew(-10deg);
     transition: all .1s ease;
     filter: drop-shadow(0 15px 20px #654dff63);
@@ -563,9 +564,20 @@ position: relative;
 }
 
 .burger-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     @media (min-width:992px) {
         display: none;
     }
+}
+
+.top-line, .middle-line,.bottom-line {
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    border-radius: 15px;
+    background-color: black;
 }
 
 .nav-mob {
@@ -807,22 +819,12 @@ tbody tr>td:nth-child(odd) {
     background-color: var(--bg-td);
 }
 
-@media (max-width: 768px) {
-    .responsive-container {
-      flex-direction: column;
-    }
-  }
-
-.responsive-container{
-    display: flex; gap: 15px;
-}
-
 .footer{
     width: 100%;
     padding: 25px;
     text-align: center;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
-    background-color: var(--btn-color);
+    background:var( --bg-gradient);
     color: var(--light-primary);
 }
 
