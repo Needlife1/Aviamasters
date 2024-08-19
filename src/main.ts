@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navLinks.forEach((link: HTMLAnchorElement) => {
         let linkPath: string | null = link.getAttribute('href');
-        console.log(linkPath);
         
         if (linkPath) {
 
