@@ -38,6 +38,7 @@ export default defineConfig(({ command }) => {
       },
     },
     server: {
+      open: '/game.html',
       watch: {
         usePolling: true,
       },

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/img/avia-icon.ico" type="image/x-icon">
+    <title>Aviamasters - Demo Game</title>
+  </head>
+  <body>
+    <load src="src/partials/header.html" />
+
+    <main style="padding: 24px;">
+      <h1>Demo: Aviamasters — локальная версия</h1>
+      <p>Это простая демо-версия краш-игры, реализованная локально для разработки.</p>
+
+      <div id="game" style="max-width: 720px; margin: 24px 0;">
+        <div style="display:flex;gap:12px; align-items:center; justify-content:space-between;">
+          <div style="font-size: 20px; font-weight: 700;">Score: <span id="score">0</span></div>
+          <div style="font-size: 20px; font-weight: 700;">Множитель: <span id="multiplier">1.00x</span></div>
+          <div id="status" style="font-size: 16px; color:#666">Ожидание</div>
+        </div>
+
+        <div style="margin-top:16px; display:flex; gap:12px;">
+          <button id="start" class="button">Старт</button>
+          <button id="fullscreen" class="button">Во весь экран</button>
+          <button id="cashout" class="button" disabled>Забрать</button>
+          <button id="reset" class="button">Сброс</button>
+        </div>
+
+        <div style="margin-top:18px;">
+          <canvas id="canvas" width="720" height="360" style="background:#00122a; width:100%; height:360px; display:block; border-radius:10px"></canvas>
+        </div>
+
+        <div style="margin-top:12px; font-size:14px; color:#bbb;">Игра управляется автоматически: вы не управляете самолётом. Множитель определяет его поведение — самолёт будет либо подниматься, либо опускаться во время полёта; при пролёте над авианосцем он попытается приземлиться.</div>
+      </div>
+
+    </main>
+
+    <load src="src/partials/footer.html" />
+    <script type="module" src="src/game.ts"></script>
+  </body>
+</html>
